@@ -3,14 +3,15 @@ $(document).ready(function() {
   var suits = ["Diamonds", "Clubs", "Spades", "Hearts"];
   var cards = [];
   $("#get-cards").click(function() {
+    for (var index = 0; index <= suits.length; index ++);
     suits.forEach(function(suit) {
       ranks.forEach(function(rank) {
         var cardName = rank + " of " + suit;
         cards.push(cardName);
       })
-    })
-    cards.forEach(function(card) {
-      $("#card-output").append("<li>" + card + "</li>");
     });
+    for (var index = 0; index <= 0; index ++) {
+    $("#card-output").append("<li>" + cards + "</li>");
+    };
   });
 });
